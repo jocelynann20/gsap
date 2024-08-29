@@ -11,33 +11,33 @@ document.addEventListener("DOMContentLoaded", function() {
         smooth: true
     });
     
-    function video_hover_ani(){
-        let video_cont = document.querySelector(".video-cont");
-    let play = document.querySelector(".play");
+    // function video_hover_ani(){
+    //     let video_cont = document.querySelector(".video-cont");
+    // let play = document.querySelector(".play");
     
     
-    video_cont.addEventListener("mouseenter", function() {
+    // video_cont.addEventListener("mouseenter", function() {
          
-        gsap.to(play,{
-            opacity : 1,
-            scale : 1
-        })
+    //     gsap.to(play,{
+    //         opacity : 1,
+    //         scale : 1
+    //     })
        
-        window.addEventListener("mousemove", function (dets) {
-            gsap.to(play,{
-                left : dets.x-70,
-                top : dets.pageY,
-            })
-        })
-    })
-    video_cont.addEventListener("mouseleave", function() {
-        gsap.to(play, {
-            opacity : 0,
-            scale :0
-        })
-    })
-    }
-    video_hover_ani();
+    //     window.addEventListener("mousemove", function (dets) {
+    //         gsap.to(play,{
+    //             left : dets.x-70,
+    //             top : dets.pageY,
+    //         })
+    //     })
+    // })
+    // video_cont.addEventListener("mouseleave", function() {
+    //     gsap.to(play, {
+    //         opacity : 0,
+    //         scale :0
+    //     })
+    // })
+    // }
+    // video_hover_ani();
     
     function load_ani(){
         gsap.from(".page1 h1",{
@@ -96,38 +96,38 @@ document.addEventListener("DOMContentLoaded", function() {
     let title2 = document.querySelector(".page1 .h12");
     
     // mouse animation on title
-    title.addEventListener("mouseenter", function(){
-        curs.style.borderRadius = '5%';
-        gsap.to(curs,{
+    // title.addEventListener("mouseenter", function(){
+    //     curs.style.borderRadius = '5%';
+    //     gsap.to(curs,{
             
-            scale : 10,
-            backgroundColor : 'rgba(181, 180, 180, 0.756)',
-            rotate : 90
+    //         scale : 10,
+    //         backgroundColor : 'rgba(181, 180, 180, 0.756)',
+    //         rotate : 90
             
-        });
-    });
-    title.addEventListener("mouseleave", function(){
-        curs.style.borderRadius = '50%';
-        gsap.to(curs,{
-            scale : 1,
-            rotate : 0
-        });
-    });
+    //     });
+    // });
+    // title.addEventListener("mouseleave", function(){
+    //     curs.style.borderRadius = '50%';
+    //     gsap.to(curs,{
+    //         scale : 1,
+    //         rotate : 0
+    //     });
+    // });
     
     
-    title2.addEventListener("mouseenter", function(){
+    // title2.addEventListener("mouseenter", function(){
         
-        gsap.to(curs,{
-            scale : 8,
-            backgroundColor : 'grey'
+    //     gsap.to(curs,{
+    //         scale : 8,
+    //         backgroundColor : 'grey'
             
-        });
-    });
-    title2.addEventListener("mouseleave", function(){
-        gsap.to(curs,{
-            scale : 1,
-        });
-    });
+    //     });
+    // });
+    // title2.addEventListener("mouseleave", function(){
+    //     gsap.to(curs,{
+    //         scale : 1,
+    //     });
+    // });
     }
     mousetitle_ani();
     
@@ -137,14 +137,14 @@ document.addEventListener("DOMContentLoaded", function() {
     function all3images_ani(){
         let img1 = document.querySelector(".page2 .elem #img1");
     
-    img1.addEventListener("mouseenter", function(){
-        curs.style.borderBottomLeftRadius = '5%';
-        curs.style.borderBottomRightRadius = '5%';
-        gsap.to(curs,{
-            scale : 19,
-            backgroundColor : 'orange',
-        });
-    });
+    // img1.addEventListener("mouseenter", function(){
+    //     curs.style.borderBottomLeftRadius = '5%';
+    //     curs.style.borderBottomRightRadius = '5%';
+    //     gsap.to(curs,{
+    //         scale : 19,
+    //         backgroundColor : 'orange',
+    //     });
+    // });
     img1.addEventListener("mouseleave", function(){
         curs.style.borderRadius = '50%';
         gsap.to(curs,{
@@ -156,14 +156,14 @@ document.addEventListener("DOMContentLoaded", function() {
     // image 2
     let img2 = document.querySelector(".page2 .elem #img2");
     
-    img2.addEventListener("mouseenter", function(){
-        curs.style.borderBottomLeftRadius = '5%';
-        curs.style.borderBottomRightRadius = '5%';
-        gsap.to(curs,{
-            scale : 20,
-            backgroundColor : 'red',
-        });
-    });
+    // img2.addEventListener("mouseenter", function(){
+    //     curs.style.borderBottomLeftRadius = '5%';
+    //     curs.style.borderBottomRightRadius = '5%';
+    //     gsap.to(curs,{
+    //         scale : 20,
+    //         backgroundColor : 'red',
+    //     });
+    // });
     img2.addEventListener("mouseleave", function(){
         curs.style.borderRadius = '50%';
         gsap.to(curs,{
@@ -176,14 +176,14 @@ document.addEventListener("DOMContentLoaded", function() {
     
     let img3 = document.querySelector(".page2 .elem #img3");
     
-    img3.addEventListener("mouseenter", function(){
-        curs.style.borderBottomLeftRadius = '5%';
-        curs.style.borderBottomRightRadius = '5%';
-        gsap.to(curs,{
-            scale : 18,
-            backgroundColor : 'green',
-        });
-    });
+    // img3.addEventListener("mouseenter", function(){
+    //     curs.style.borderBottomLeftRadius = '5%';
+    //     curs.style.borderBottomRightRadius = '5%';
+    //     gsap.to(curs,{
+    //         scale : 18,
+    //         backgroundColor : 'green',
+    //     });
+    // });
     img3.addEventListener("mouseleave", function(){
         curs.style.borderRadius = '50%';
         gsap.to(curs,{
@@ -196,168 +196,168 @@ document.addEventListener("DOMContentLoaded", function() {
     all3images_ani();
     // mouse animation on page 3 content leftdiv /right div
     
-    function mouse_ani_page3(){
-        document.querySelector(".page3 .leftdiv h1").
-    addEventListener("mouseenter", function (){
-        curs.style.borderTopRightRadius = '5%';
-        gsap.to(curs,{
-            scale : 8,
-            backgroundColor : '#FFCBC0'
-        });
-    });
-    document.querySelector(".page3 .leftdiv h1").
-    addEventListener("mouseleave", function (){
-        curs.style.borderRadius = '50%';
-        gsap.to(curs,{
-            scale : 1,
-            backgroundColor : 'grey'
-        });
-    });
+    // function mouse_ani_page3(){
+    //     document.querySelector(".page3 .leftdiv h1").
+    // addEventListener("mouseenter", function (){
+    //     curs.style.borderTopRightRadius = '5%';
+    //     gsap.to(curs,{
+    //         scale : 8,
+    //         backgroundColor : '#FFCBC0'
+    //     });
+    // });
+    // document.querySelector(".page3 .leftdiv h1").
+    // addEventListener("mouseleave", function (){
+    //     curs.style.borderRadius = '50%';
+    //     gsap.to(curs,{
+    //         scale : 1,
+    //         backgroundColor : 'grey'
+    //     });
+    // });
     
-    //right div
+    // //right div
     
-    document.querySelector(".page3 .rightdiv p").
-    addEventListener("mouseenter", function (){
-        curs.style.borderTopLeftRadius = '5%';
-        gsap.to(curs,{
-            scale : 3,
-            backgroundColor : '#FFF3C4'
-        });
-    });
-    document.querySelector(".page3 .rightdiv p").
-    addEventListener("mouseleave", function (){
-        curs.style.borderRadius = '50%';
+    // document.querySelector(".page3 .rightdiv p").
+    // addEventListener("mouseenter", function (){
+    //     curs.style.borderTopLeftRadius = '5%';
+    //     gsap.to(curs,{
+    //         scale : 3,
+    //         backgroundColor : '#FFF3C4'
+    //     });
+    // });
+    // document.querySelector(".page3 .rightdiv p").
+    // addEventListener("mouseleave", function (){
+    //     curs.style.borderRadius = '50%';
     
-        gsap.to(curs,{
-            scale : 1,
-            backgroundColor : 'grey'
-        });
-    });
-    }
-    mouse_ani_page3();
-    
-    
-    function producthover_ani(){
-        document.querySelector("#product1").
-    addEventListener("mouseenter",function hello(){
-        gsap.to(curs,{
-            scale : 10,
-            backgroundColor : '#f3dda5',
-            borderRadius : '4%',
-            rotate : 0,
-            rotate : -180,
-        });
-    });
-    document.querySelector("#product1").
-    addEventListener("mouseleave",function(){
-        gsap.to(curs,{
-            scale : 1,
-            backgroundColor : '#dadada',
-            borderRadius : '50%',
-            rotate : 0,
-        });
-    });
-    document.querySelector("#product2").
-    addEventListener("mouseenter",function hello(){
-        gsap.to(curs,{
-            scale : 10,
-            backgroundColor : '#f2fcdc',
-            borderRadius : '4%',
-            rotate : 0,
-            rotate : -180,
-        });
-    });
-    document.querySelector("#product2").
-    addEventListener("mouseleave",function(){
-        gsap.to(curs,{
-            scale : 1,
-            backgroundColor : '#dadada',
-            borderRadius : '50%',
-            rotate : 0,
-        });
-    });
-    document.querySelector("#product3").
-    addEventListener("mouseenter",function hello(){
-        gsap.to(curs,{
-            scale : 10,
-            backgroundColor : '#dcfcf0',
-            borderRadius : '4%',
-            rotate : 0,
-            rotate : -180,
-        });
-    });
-    document.querySelector("#product3").
-    addEventListener("mouseleave",function(){
-        gsap.to(curs,{
-            scale : 1,
-            backgroundColor : '#dadada',
-            borderRadius : '50%',
-            rotate : 0,
-        });
-    });
-    document.querySelector("#product4").
-    addEventListener("mouseenter",function hello(){
-        gsap.to(curs,{
-            scale : 10,
-            backgroundColor : '#d2c5e6',
-            borderRadius : '4%',
-            rotate : 0,
-            rotate : -180,
-        });
-    });
-    document.querySelector("#product4").
-    addEventListener("mouseleave",function(){
-        gsap.to(curs,{
-            scale : 1,
-            backgroundColor : '#dadada',
-            borderRadius : '50%',
-            rotate : 0,
-        });
-    });
-    
-    }
-    producthover_ani();
+    //     gsap.to(curs,{
+    //         scale : 1,
+    //         backgroundColor : 'grey'
+    //     });
+    // });
+    // }
+    // mouse_ani_page3();
     
     
-    if(window.getComputedStyle(curs).getPropertyValue('display') === 'block'){
+    // function producthover_ani(){
+    //     document.querySelector("#product1").
+    // addEventListener("mouseenter",function hello(){
+    //     gsap.to(curs,{
+    //         scale : 10,
+    //         backgroundColor : '#f3dda5',
+    //         borderRadius : '4%',
+    //         rotate : 0,
+    //         rotate : -180,
+    //     });
+    // });
+    // document.querySelector("#product1").
+    // addEventListener("mouseleave",function(){
+    //     gsap.to(curs,{
+    //         scale : 1,
+    //         backgroundColor : '#dadada',
+    //         borderRadius : '50%',
+    //         rotate : 0,
+    //     });
+    // });
+    // document.querySelector("#product2").
+    // addEventListener("mouseenter",function hello(){
+    //     gsap.to(curs,{
+    //         scale : 10,
+    //         backgroundColor : '#f2fcdc',
+    //         borderRadius : '4%',
+    //         rotate : 0,
+    //         rotate : -180,
+    //     });
+    // });
+    // document.querySelector("#product2").
+    // addEventListener("mouseleave",function(){
+    //     gsap.to(curs,{
+    //         scale : 1,
+    //         backgroundColor : '#dadada',
+    //         borderRadius : '50%',
+    //         rotate : 0,
+    //     });
+    // });
+    // document.querySelector("#product3").
+    // addEventListener("mouseenter",function hello(){
+    //     gsap.to(curs,{
+    //         scale : 10,
+    //         backgroundColor : '#dcfcf0',
+    //         borderRadius : '4%',
+    //         rotate : 0,
+    //         rotate : -180,
+    //     });
+    // });
+    // document.querySelector("#product3").
+    // addEventListener("mouseleave",function(){
+    //     gsap.to(curs,{
+    //         scale : 1,
+    //         backgroundColor : '#dadada',
+    //         borderRadius : '50%',
+    //         rotate : 0,
+    //     });
+    // });
+    // document.querySelector("#product4").
+    // addEventListener("mouseenter",function hello(){
+    //     gsap.to(curs,{
+    //         scale : 10,
+    //         backgroundColor : '#d2c5e6',
+    //         borderRadius : '4%',
+    //         rotate : 0,
+    //         rotate : -180,
+    //     });
+    // });
+    // document.querySelector("#product4").
+    // addEventListener("mouseleave",function(){
+    //     gsap.to(curs,{
+    //         scale : 1,
+    //         backgroundColor : '#dadada',
+    //         borderRadius : '50%',
+    //         rotate : 0,
+    //     });
+    // });
     
-        document.querySelector(".page5 .one_elem_left h3").
-    addEventListener("mouseenter",function(){
-        gsap.to(curs,{
-            scale : 5,
-            borderRadius : '40%',
-            backgroundColor : "#d9c7d4"
-        })
+    // }
+    // producthover_ani();
+    
+    
+    // if(window.getComputedStyle(curs).getPropertyValue('display') === 'block'){
+    
+    //     document.querySelector(".page5 .one_elem_left h3").
+    // addEventListener("mouseenter",function(){
+    //     gsap.to(curs,{
+    //         scale : 5,
+    //         borderRadius : '40%',
+    //         backgroundColor : "#d9c7d4"
+    //     })
         
-    })
-    document.querySelector(".page5 .one_elem_left h3").
-    addEventListener("mouseleave",function(){
-        gsap.to(curs,{
-            scale : 1,
-            borderRadius : '50%',
-            backgroundColor : "#dadada"
-        })
-    })
+    // })
+    // document.querySelector(".page5 .one_elem_left h3").
+    // addEventListener("mouseleave",function(){
+    //     gsap.to(curs,{
+    //         scale : 1,
+    //         borderRadius : '50%',
+    //         backgroundColor : "#dadada"
+    //     })
+    // })
     
-    document.querySelector(".page5 .two_elem_right img").
-    addEventListener("mouseenter",function(){
-        gsap.to(curs,{
-            scale : 20,
-            borderRadius : "5%",
-            backgroundColor : "#adc6ed",
-        });
+    // document.querySelector(".page5 .two_elem_right img").
+    // addEventListener("mouseenter",function(){
+    //     gsap.to(curs,{
+    //         scale : 20,
+    //         borderRadius : "5%",
+    //         backgroundColor : "#adc6ed",
+    //     });
     
-    })
-    document.querySelector(".page5 .two_elem_right img").
-    addEventListener("mouseleave",function(){
-        gsap.to(curs,{
-            scale : 1,
-            borderRadius : '50%',
-            backgroundColor : "#dadada",
-        })
+    // })
+    // document.querySelector(".page5 .two_elem_right img").
+    // addEventListener("mouseleave",function(){
+    //     gsap.to(curs,{
+    //         scale : 1,
+    //         borderRadius : '50%',
+    //         backgroundColor : "#dadada",
+    //     })
     
-    })
-    }
+    // })
+    // }
     
     
     
